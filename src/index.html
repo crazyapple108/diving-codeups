@@ -18,6 +18,10 @@
   <meta property="og:description" content="" />
   <!-- ファビコン -->
   <link rel="”icon”" href="" />
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
   <!-- css -->
   <link rel="stylesheet" href="./assets/css/style.css" />
   <!-- JavaScript -->
@@ -25,12 +29,103 @@
   <script defer src="./assets/js/script.js"></script>
 </head>
 <body>
-  <header>
-
+  <header class="header inner">
+    <div class="header__title siteTitle">
+      <a class="siteTitle__logo" href="index.html">
+        <img src="assets/images/common/CodeUps.svg" alt="CodeUps" />
+      </a>
+    </div>
+    <div class="header__pcMenu pcMenu">
+      <nav class="pcMenu__main mainMenu">
+        <ul class="mainMenu__list">
+          <li class="mainMenu__item">
+            <a href="index.html" class="mainMenu__link">
+              <div class="mainMenu__label">Campaign</div>
+              キャンペーン
+            </a>
+          </li>
+          <li class="mainMenu__item">
+            <a href="" class="mainMenu__link">
+              <div class="mainMenu__label">About us</div>
+              私たちについて
+            </a>
+          </li>
+          <li class="mainMenu__item">
+            <a href="" class="mainMenu__link">
+              <div class="mainMenu__label">Information</div>
+              ダイビング情報
+            </a>
+          </li>
+          <li class="mainMenu__item">
+            <a href="" class="mainMenu__link">
+              <div class="mainMenu__label">Blog</div>
+              ブログ
+            </a>
+          </li>
+          <li class="mainMenu__item">
+            <a href="" class="mainMenu__link">
+              <div class="mainMenu__label">Voice</div>
+              お客様の声
+            </a>
+          </li>
+          <li class="mainMenu__item">
+            <a href="" class="mainMenu__link">
+              <div class="mainMenu__label">Price</div>
+              料金一覧
+            </a>
+          </li>
+          <li class="mainMenu__item">
+            <a href=""    class="mainMenu__link">
+              <div class="mainMenu__label">FAQ</div>
+              よくある質問
+            </a>
+          </li>
+          <li class="mainMenu__item">
+            <a href="" class="mainMenu__link">
+              <div class="mainMenu__label">Contact</div>
+              お問合わせ
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__spMenu spMenu">
+      <input id="navToggle" type="checkbox" class="spMenu__toggle" />
+      <label for="navToggle" class="spMenu__hamburger">
+        <span class="spMenu__hamburgerLine"></span>
+      </label>
+      <div class="spMenu__wrapper">
+        <nav class="spMenu__main mainSpMenu">
+          <ul class="mainSpMenu__list">
+            <li class="mainSpMenu__item">
+              <a href="index.html" class="mainSpMenu__link">トップ</a>
+            </li>
+            <li class="mainSpMenu__item">
+              <a href="" class="mainSpMenu__link">お知らせ</a>
+            </li>
+            <li class="mainSpMenu__item">
+              <a href="" class="mainSpMenu__link">調剤薬局</a>
+            </li>
+            <li class="mainSpMenu__item">
+              <a href="" class="mainSpMenu__link">在宅医療</a>
+            </li>
+            <li class="mainSpMenu__item">
+              <a href="" class="mainSpMenu__link">お役立ちコラム</a>
+            </li>
+            <li class="mainSpMenu__item">
+              <a href="" class="mainSpMenu__link">会社概要</a>
+            </li>
+            <li class="mainSpMenu__item">
+              <a href="" class="mainSpMenu__link">お問い合わせ</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </header>
   <main>
     <div class="inner">
-      <p class="test">はじめ</p>
+      
     </div>
   </main>
   <footer>

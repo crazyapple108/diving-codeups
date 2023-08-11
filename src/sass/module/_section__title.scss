@@ -1,0 +1,44 @@
+@use 'global' as *;
+
+.section__title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: rem(8);
+}
+
+.section__title-main{
+  color: #0D2936;
+  font-family: $en-font-family;
+  font-size: rem(32);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  @include mq(md) {
+    font-size: rem(40);
+  }
+}
+
+.section__title-main span{
+  color: #408F95;
+}
+
+.section__title-sub{
+  font-family: $ja-font-family;
+  font-size: rem(12);
+  line-height: 1.5;
+  color: #408F95;
+}
+
+.section__title-main__white {
+  font-family: "lato",sans-serif;
+  font-size: rem(40);
+  color: #fff;
+  letter-spacing: 0.54em;
+}
+
+.section__title-sub__white {
+  font-family: $en-font-family;
+  font-size: rem(20);
+  color: #fff;
+}

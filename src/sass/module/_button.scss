@@ -1,0 +1,71 @@
+@use "global" as *;
+
+.button {
+  // アニメーションの起点になるためrelativeを指定
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  display: inline-block;
+  font-size: rem(14);
+  font-family: $en-font-family;
+  font-weight: 300;
+  line-height: 1.25;
+  letter-spacing: 0.05em;
+  padding: rem(16) rem(88) rem(16) rem(40);
+  background-color: #408F95;
+  color: #FFF;
+  transition: ease .2s;
+  // border: 1px solid #408F95;
+  box-shadow: 5px 5px #fff, 5px 5px 0 2px #408F95;
+  outline: 1px solid #408F95;
+}
+
+.button span {
+  position: relative;
+  z-index: 3;
+  color: #FFF;
+}
+
+.button:hover span {
+  color: #408F95;
+}
+
+.button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: calc(50% - 6px);
+  right: rem(40);
+  width: rem(40);
+  height: rem(6);
+  border: none;
+  border-right: 2px solid #FFF;
+  border-bottom: 1px solid #FFF;
+  transform: skew(45deg);
+}
+
+.button:hover:after {
+  border-right: 2px solid #408F95;
+  border-bottom: 1px solid #408F95;
+  z-index: 3;
+}
+
+.button__mask::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: #FFF;
+  width: 100%;
+  height: 100%;
+  transition: transform .6s cubic-bezier(0.8,0,0.2,1)0s;
+  transform: scale(0,1);
+  transform-origin: right top;
+}
+
+.button__mask:hover:before {
+  transform-origin: left top;
+  transform: scale(1,1);
+}
+
