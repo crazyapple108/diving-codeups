@@ -2,4 +2,27 @@
 
 .header {
   display: flex;
+  height: rem(80);
+  background-color: blue;
+  @include mq(md) {
+    height: rem(90);
+  }
+}
+
+.header__title {
+  padding-top: rem(21);
+}
+
+.header__pcMenu{
+  display: none;
+  @include mq(md) {
+    display: block;
+  }
+}
+
+.header__spMenu {
+  display: block;
+  @include mq(md) {
+    display: none;
+  }
 }

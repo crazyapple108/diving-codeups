@@ -14,6 +14,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 1;
+  text-transform: capitalize;
   @include mq(md) {
     font-size: rem(40);
   }

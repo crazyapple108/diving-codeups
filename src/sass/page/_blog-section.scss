@@ -1,0 +1,12 @@
+@use 'global' as *;
+
+.blog-section {
+  @include mq(md) {
+    background-image: url(/assets/images/common/bg-blog.jpg);
+    background-size: 100%;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-color: #DDF0F1;
+
+  }
+}

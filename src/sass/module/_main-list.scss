@@ -1,0 +1,30 @@
+@use 'global' as *;
+
+.main-list {}
+.main-list__items {
+  list-style: none;
+  display: grid;
+  // row-gap: rem(40);
+  grid-template-columns: repeat(auto-fill,  minmax(166px, 1fr));
+  grid-template-rows: repeat(5, 1fr);
+  grid-auto-flow: column;
+}
+.main-list__item {
+  // position: relative;
+  
+}
+.main-list__item:before {
+  content: url(../images/common/hitode.svg);
+  // margin-right: rem(4);
+  display: inline-block;
+  width: rem(18);
+  height: auto;
+
+}
+.main-list__item-link {
+  color: #FFF;
+  font-family: $ja-font-family;
+  font-size: rem(16);
+  font-weight: 700;
+  line-height: 1.125;
+}

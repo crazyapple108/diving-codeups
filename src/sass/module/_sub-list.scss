@@ -1,0 +1,6 @@
+@use 'global' as *;
+
+.sub-list__items {
+  display: grid;
+  row-gap: rem(20);
+}

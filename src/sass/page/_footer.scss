@@ -1,0 +1,23 @@
+@use 'global' as *;
+
+.footer {
+  background-color: #408F95;
+}
+
+.footer__inner{}
+
+.footer__title{}
+
+.footer__head {
+  @include mq(md) {
+    display: flex;
+    gap: rem(40);
+  }
+}
+.footer__sns-area {
+  display: flex;
+  gap: rem(16);
+}
+
+.footer__lists{}
+.footer__list{}

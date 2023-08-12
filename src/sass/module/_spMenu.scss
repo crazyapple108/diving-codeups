@@ -1,0 +1,86 @@
+@use 'global' as *;
+.spMenu {}
+.spMenu__toggle {
+  position: absolute;
+  top: -200px;
+}
+.spMenu__toggle:checked ~ .spMenu__wrapper {
+ display: block;
+}
+.spMenu__toggle:focus-visible ~ .spMenu__hamburger {
+  box-shadow: 1px 1px 2px gray;
+}
+
+.spMenu__toggle:checked ~ .spMenu__hamburger {
+  .spMenu__hamburgerLine{
+      background: transparent;
+      // opacity: 0;
+  }
+  .spMenu__hamburgerLine::before{
+      top: 50%;
+      transform: rotate(45deg);
+      transition: all 0.5s ease;
+      // transform: translateY(20px) rotate(-45deg);
+    }
+  .spMenu__hamburgerLine::after{
+      top: 50%;
+      transform: rotate(-45deg);
+      transition: all 0.5s ease;
+      // transform: translateY(-20px) rotate(45deg);
+    }
+}
+
+.spMenu__hamburger {
+  width: rem(32);
+  height: rem(24);
+  position: absolute;
+  top: rem(28);
+  right: rem(15);
+  
+}
+.spMenu__hamburgerLine {
+   display: block;
+   width: rem(32);
+    height: rem(2);
+    background: #fff;
+    position: absolute;
+    top: rem(15);
+    transform: translateY(-50%);
+    transition: all 0.3s;
+}
+
+.spMenu__hamburgerLine::before {
+  content: '';
+  position: absolute;
+  top: rem(-10);
+  width: 100%;
+  height: rem(2);
+  background: #fff;
+  transition: all 0.3s;
+}
+
+.spMenu__hamburgerLine::after {
+  content: '';
+  position: absolute;
+  bottom: rem(-10);
+  width: 100%;
+  height: rem(2);
+  background: #fff;
+  transition: all 0.3s;
+}
+
+.spMenu__wrapper {
+  display: none;
+  overflow-y: scroll;
+  height: calc(100vh - rem(80));
+  position: absolute;
+  top: rem(80);
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  background: #408F95;
+}
+
+.spMenu__main {
+  margin-top: rem(24);
+}

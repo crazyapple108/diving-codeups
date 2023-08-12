@@ -40,3 +40,22 @@
   margin-top: rem(16);
 }
 
+.blog-card__wrapper {
+  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: rem(24);
+    @include mq(md) {
+      flex-direction: initial;
+      margin-top: rem(80);
+      gap: rem(40);
+    }
+}
+
+.blog-card__wrapper .blog-card:not(:first-child) {
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: initial;
+  }
+}
