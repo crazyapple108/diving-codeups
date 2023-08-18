@@ -3,4 +3,13 @@
 .section__button {
   margin-top: rem(40);
   text-align: center;
+  @include mq(md) {
+    margin-top: rem(80);
+  }
+}
+
+.section__button--info,.section__button--about {
+  @include mq(md) {
+    margin-top: rem(40);
+  }
 }

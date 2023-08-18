@@ -34,8 +34,9 @@
   width: rem(32);
   height: rem(24);
   position: absolute;
-  top: rem(28);
+  top: rem(23);
   right: rem(15);
+  z-index: 9999;
   
 }
 .spMenu__hamburgerLine {
@@ -73,14 +74,17 @@
   display: none;
   overflow-y: scroll;
   height: calc(100vh - rem(80));
+  height: 100vh;
   position: absolute;
-  top: rem(80);
+  // top: rem(80);
+  padding-top: rem(80);
+  top: 0;
   left: 0;
-  z-index: 9999;
+  z-index: 900;
   width: 100%;
   background: #408F95;
 }
 
-.spMenu__main {
-  margin-top: rem(24);
-}
+// .spMenu__main {
+//   margin-top: rem(22);
+// }

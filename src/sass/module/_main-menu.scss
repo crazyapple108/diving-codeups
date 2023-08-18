@@ -1,0 +1,20 @@
+@use 'global' as *;
+
+.main-menu__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-menu__link {
+  font-family: $ja-font-family;
+  font-size: rem(10);
+  color: #fff;
+  text-align: center;
+}
+
+.main-menu__label {
+  font-family: $en-font-family;
+  font-size: rem(18);
+  color: #fff;
+}

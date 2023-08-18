@@ -1,0 +1,8 @@
+@use 'global' as *;
+
+.sns-icon {
+  width: rem(26);
+  @include mq(md) {
+    width: rem(32);
+  }
+}

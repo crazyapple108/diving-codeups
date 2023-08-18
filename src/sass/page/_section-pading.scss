@@ -3,7 +3,31 @@
 .section-padding {
   padding: rem(80) 0;
   @include mq(md) {
-    padding: rem(140) 0;
+    padding-top: rem(100);
   }
 }
 
+.section-padding__about-us {
+  padding: rem(80) 0;
+  @include mq(md) {
+    padding-top: rem(140);
+    padding-bottom: rem(280);
+  }
+}
+
+.section-padding__contact {
+  padding-top: rem(80);
+  padding-bottom: rem(100);
+  @include mq(md) {
+    padding-top: rem(140);
+    padding-bottom: rem(149);
+  }
+}
+
+.section-padding__footer {
+  padding-top: rem(48);
+  padding-bottom: rem(56);
+  @include mq(md) {
+    padding: rem(80) 0;
+  }
+}

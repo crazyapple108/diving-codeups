@@ -1,0 +1,14 @@
+@use 'global' as *;
+
+.sub-list__item {
+  padding-left: rem(22);
+  padding-top: rem(18);
+}
+
+.sub-list__item-link {
+  color: #FFF;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 1rem;
+    font-weight: initial;
+    line-height: 1.125;
+}
