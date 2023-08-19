@@ -26,6 +26,7 @@
 
 .header__inner {
   display: flex;
+  height: inherit;
   align-items: center;
   justify-content: space-between;
   // position: relative;
@@ -44,6 +45,8 @@
 }
 
 .header__title {
+  height: inherit;
+  padding-top: rem(22);
   aspect-ratio: 102 / 38;
   width: rem(102);
   z-index: 9999;
@@ -67,6 +70,8 @@
   display: none;
   @include mq(lg) {
     display: block;
+    height: inherit;
+    // padding-top: rem(22);
     // padding-left: 30%;
   }
 }
@@ -74,6 +79,7 @@
 .header__main-menu-list {
   @include mq(md) {
     display: flex;
+    height: inherit;
   }
 }
 
