@@ -1,0 +1,36 @@
+@use 'global' as *;
+
+.voice-section {
+  position: relative;
+}
+
+.voice-section::before{
+  @include mq(md) {
+    content: "";
+    position: absolute;
+    top: 2.2%;
+    left: 7%;
+    background-image: url(/assets/images/common/voice-bg-fish.png);
+    background-size: cover;
+    display: block;
+    width: 100%;
+    max-width: rem(301);
+    height: 100%;
+    max-height: rem(138);
+  }
+}
+.voice-section::after{
+  @include mq(md) {
+    content: "";
+    position: absolute;
+    bottom: 9.2%;
+    right: 12.4%;
+    background-image: url(/assets/images/common/voice-bg-ibaratatu.png);
+    background-size: cover;
+    display: block;
+    width: 100%;
+    max-width: rem(71);
+    height: 100%;
+    max-height: rem(162);
+  }
+}

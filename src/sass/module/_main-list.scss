@@ -3,7 +3,11 @@
 .main-list {}
 .main-list__items {
   list-style: none;
-  display: flex;
+  // display: flex;
+  display: grid;
+  grid-template-columns: repeat(2,rem(168));
+  // place-items: center;
+  justify-content: space-evenly;
   width: 100%;
   // grid-template-columns: repeat(auto-fill,  minmax(166px, 1fr));
   // grid-template-rows: repeat(10, auto);
@@ -38,9 +42,10 @@
 }
 
 .main-list__left-area {
-  width: 50%;
+  // width: 50%;
 }
 
 .main-list__right-area {
-  width: 50%;
+  // width: 50%
+  padding-left: rem(6);;
 }

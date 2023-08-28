@@ -1,5 +1,29 @@
 @use 'global' as *;
 
+.about-us-section {
+  // @include mq(md) {
+  //   background-image: url(/assets/images/common/sango&isogin.png);
+  //   background-repeat: no-repeat;
+  //   background-size: 20% 10%;
+  // }
+}
+
 .about-us-section__inner {
   position: relative;
+}
+
+.about-us-section__inner::before {
+  content: "";
+  position: absolute;
+  top: 124%;
+  left: 89%;
+  background-image: url(/assets/images/common/sango&isogin.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  // display: inline-block;
+  max-height: rem(181);
+  height: 100%;
+  max-width: rem(194);
+  width: 100%;
+  z-index: 5;
 }

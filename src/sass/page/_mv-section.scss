@@ -1,26 +1,43 @@
 @use 'global' as *;
 
-.mv-section {
+.mv {
   position: relative;
-  height: 100vh;
-  background-image: url(/assets/images/common/mv1.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  // height: 100vh;
 }
-.mv-section__inner {}
+
+.mv__inner {
+  height: 100vh;
+  width: 100%;
+}
+
 .mv-section__header {
   position: absolute;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: 50%;
   color: #fff;
+  z-index: 100;
+  transform: translate(-50%, -50%);
+  left: 52.5%;
+  top: 49.5%;
+  @include mq(md) {
+    left: 51.6%;
+    top: 55.5%;
+  }
 }
 .mv-section__title {
   font-size: rem(40);
   letter-spacing: 0.54em;
   color: #fff;
-  // font-family: $ja-font-family;
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  @include mq(md) {
+    font-size: rem(80);
+    line-height: 1.25;
+  }
 }
 .mv-section__subtitle {
   text-align: center;
+  font-family: $en-font-family;
+  @include mq(md) {
+    font-size: rem(20);
+  }
 }
+

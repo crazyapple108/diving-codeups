@@ -5,7 +5,7 @@
 }
 
 .price__contents {
-  margin-top: rem(24);
+  margin-top: rem(28.8);
   @include mq(md) {
     margin-top: rem(40);
     display: flex;
@@ -27,12 +27,15 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  @include mq(md) {
+    height: 114.4%;
+  }
 }
 
 
 
 .price__rate-sheet {
-  margin-top: rem(40);
+  margin-top: rem(38.4);
   @include mq(md) {
     margin-top: initial;
     width: 50%;
@@ -41,6 +44,9 @@
 
 .price__rate-sheet .price__table:not(:first-child){
   padding-top: rem(40);
+  @include mq(md) {
+    padding-top: rem(32);
+  }
 }
 
 .price__table {
@@ -55,14 +61,27 @@
   font-size: rem(16);
   font-family: $ja-font-family;
   line-height: 1.5;
-  border-bottom: 1px solid #0D2936;
   text-align: left;
+  position: relative;
+}
+.price__table th::after{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  background-color: #408F95;
+  height: rem(1);
+  bottom: rem(-3);
 }
 
 .price__table td {
   font-size: rem(14);
-  line-height: 1.714;
-  padding-top: rem(8);
+  line-height: 1.714285714;
+  padding-top: rem(7);
+  @include mq(md) {
+    font-size: rem(16);
+    line-height: 1.5;
+  }
 }
 
 .price__table td + td{
